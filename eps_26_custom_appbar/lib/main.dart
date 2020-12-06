@@ -8,9 +8,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // to hide debug banner on righttop side
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
+          // give custom height to the appbar
           preferredSize: Size.fromHeight(200),
           child: AppBar(
             backgroundColor: Colors.amberAccent,
