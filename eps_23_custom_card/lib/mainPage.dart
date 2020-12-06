@@ -14,6 +14,7 @@ class MainPage extends StatelessWidget {
         ),
         backgroundColor: Colors.deepOrange,
       ),
+      // the wrapper of the card
       body: Stack(children: <Widget>[
         Container(
           decoration: BoxDecoration(
@@ -39,6 +40,7 @@ class MainPage extends StatelessWidget {
                                   'https://www.toptal.com/designers/subtlepatterns/patterns/memphis-mini.png'),
                               fit: BoxFit.cover))),
                 ),
+                // the image card
                 Container(
                   height: MediaQuery.of(context).size.height * 0.35,
                   decoration: BoxDecoration(
@@ -51,6 +53,7 @@ class MainPage extends StatelessWidget {
                         fit: BoxFit.cover),
                   ),
                 ),
+                // the text side
                 Container(
                   margin: EdgeInsets.fromLTRB(20,
                       50 + MediaQuery.of(context).size.height * 0.3, 20, 20),
@@ -84,6 +87,7 @@ class MainPage extends StatelessWidget {
                           ),
                           ]),
                         ),
+                        // part of the comment and like
                         Row(
                           children: <Widget>[
                             Spacer(flex: 10,),
